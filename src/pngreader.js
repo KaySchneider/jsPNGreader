@@ -89,7 +89,7 @@ pngreader.prototype.sourceInfo = function () {
  */
 pngreader.prototype.printInfo = function () {
     var div = document.createElement("div");
-    var iText = 'Image width:'+ this.header.width + ' Image height: ' + this.header.height + ' bitdepth: ' + this.header.bitdepth + ' colorType' + this.header.colorType + ' compressionMethod';
+    var iText = 'Image width:'+ this.header.width + ' Image height: ' + this.header.height + ' bitdepth: ' + this.header.bitdepth + ' colorType:' + this.header.colorType + ' compressionMethod:' + this.header.comressionMethod + ' filterType:' + this.header.filterMethod + ' interlace Method' + this.header.interLaceMethod;
     var textuallInfo = document.createTextNode(iText);
     div.appendChild(textuallInfo);
     document.body.appendChild(div);
